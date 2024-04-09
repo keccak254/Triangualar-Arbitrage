@@ -1,6 +1,6 @@
 import requests
 import json
-import time
+
 
 # Make a Get Request
 def get_coin_tickers(url):
@@ -73,16 +73,16 @@ def structure_triangular_pairs(coin_list):
 
                             if unique_item not in remove_duplicates_list:
                                 match_dict = {
-                                  "abase": a_base,
-                                  "b_base": b_base,
-                                  "c_base": c_base,
-                                  "a_quote": a_quote,
-                                  "b_quote": b_quote,
-                                  "c_quote": c_quote,
-                                  "pair_a": pair_a,
-                                  "pair_b": pair_b,
-                                  "pair_c": pair_c,
-                                  "combined": combined
+                                    "abase": a_base,
+                                    "b_base": b_base,
+                                    "c_base": c_base,
+                                    "a_quote": a_quote,
+                                    "b_quote": b_quote,
+                                    "c_quote": c_quote,
+                                    "pair_a": pair_a,
+                                    "pair_b": pair_b,
+                                    "pair_c": pair_c,
+                                    "combined": combined
                                 }
                                 triangular_pairs_list.append(match_dict)
                                 remove_duplicates_list.append(unique_item)
